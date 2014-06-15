@@ -3,7 +3,6 @@ function parallel(data){
 	parallel = {}
 
 	function parallel.setup = function(height, width, padding, mainDiv) {
-	    // body...
 		this.height = height
 		this.width = width
 		this.padding = padding
@@ -12,7 +11,6 @@ function parallel(data){
 	}
 
 	function parallel.plot = function(mainDiv) {
-		// body...
 		var eachWidth = this.width / (data.traits.length - 1)
 		this.chart = d3.select(mainDiv).html("")
 			.append("svg")
