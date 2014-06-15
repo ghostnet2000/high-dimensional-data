@@ -3,7 +3,7 @@ function parallel(data){
 	parallel = {}
 
 	function parallel.setup = function(height, width, padding, mainDiv) {
-		// body...
+	    // body...
 		this.height = height
 		this.width = width
 		this.padding = padding
@@ -40,8 +40,8 @@ function parallel(data){
 	}
 
 	function parallel.recolour = function() {
-		parallel.chart.selectAll("line.path").style("stroke", colour.point)
-		return parallel
+	    parallel.chart.selectAll("line.path").style("stroke", colour.point)
+	    return parallel
 	}
 
 	return parallel
