@@ -13,16 +13,16 @@ function parallel(data){
 
 	function parallel.plot = function(mainDiv) {
 		// body...
-	    var eachWidth = this.width / (data.traits.length - 1)
-	    this.chart = d3.select(mainDiv).html("")
-	        .append("svg")
-	        .attr("class", "chart")
-	        .attr("width", this.width + 2*this.padding)
-	        .attr("height", this.height + 2*this.padding);
+		var eachWidth = this.width / (data.traits.length - 1)
+		this.chart = d3.select(mainDiv).html("")
+			.append("svg")
+	    	.attr("class", "chart")
+	    	.attr("width", this.width + 2*this.padding)
+	    	.attr("height", this.height + 2*this.padding);
 
 	    for (var i=1; i< data.traits.length; i++) {
 	      var prev = data.traits[i-1],
-	          current = data.traits[i]
+	      	current = data.traits[i]
 	      parallel.chart.selectAll("linechart")
 	          .data(data.values)
 	           .enter().append("svg:line")
