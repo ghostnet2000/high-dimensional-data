@@ -2,17 +2,16 @@
 <html>
   <head>
     <title>Prototyping Parallel Coord</title>
-    <script type="text/javascript" src="../lib/d3.js"></script>
-    <script type="text/javascript" src="../data/randomdata.js"></script>
-    <script type="text/javascript" src="../components/Parallel"></script>
+    <script charset="utf-8" type="text/javascript" src="./lib/d3.js"></script>
+    <script type="text/javascript" src="./data/randomdata.js"></script>
+    <script type="text/javascript" src="./components/parallel.js"></script>
   </head>
   <body>
 
     <div id="graph"></div>
 
     <script type="text/javascript">
-    	setup(200, 300, 20, "Parallel");
-    	
+        setupParallel(200,400,20, "#graph");	
     </script>
 
   </body>
