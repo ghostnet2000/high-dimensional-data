@@ -5,13 +5,28 @@
     <script charset="utf-8" type="text/javascript" src="./lib/d3.js"></script>
     <script type="text/javascript" src="./data/randomdata.js"></script>
     <script type="text/javascript" src="./components/parallel.js"></script>
+    <script type="text/javascript" src="./components/scatter.js"></script>
+    <style type="text/css">
+      #leftPanel {
+        float:left
+      }
+    </style>
   </head>
   <body>
+    <div id="leftPanel">
+      <div id="parallel">
+        <!-- for the parallel coord plot -->
+      </div>
+    </div>
 
-    <div id="graph"></div>
+    <div id="rightPanel">
+      <!-- for the scatter plot -->
+    </div>
 
     <script type="text/javascript">
-        setupParallel(200,400,20, "#graph");	
+        setupParallel(200,400,20, "#parallel");
+        plotScatter = setupScatter(200, 300, 20, "#rightPanel");
+        plotScatter("x","y");
     </script>
 
   </body>
